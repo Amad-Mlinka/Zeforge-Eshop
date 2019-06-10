@@ -1,0 +1,37 @@
+.one-tile{
+    background: url('https://www.overclockers.co.uk/media/image/FS0018P_149514.jpg') no-repeat center center;
+    height: 800px;
+    width: 800px;
+}
+.two-tile{
+    background: url('https://icdn6.digitaltrends.com/image/smartphones2-720x720.jpg') no-repeat center;
+    
+}
+.three-tile{
+    background: url('https://source.unsplash.com/random/801x802') no-repeat center center;
+    height: 800px;
+    width: 800px;
+}
+.four-tile{
+    background: url('https://cheaprices.it/36-large_default/xbox-one-controller-wireless-minecraft-verde-limited-edition.jpg') no-repeat center center;
+    
+}
+.five-tile{
+    background: url('https://www.adorama.com/col/images/cat/49280.jpg') no-repeat center center;
+    height: 800px;
+    width: 800px;
+}
+.six-tile{
+    background: url('https://source.unsplash.com/random/801x801') no-repeat center center;
+    height: 800px;
+    width: 800px;
+    color: black;
+}
+
+
+.box-text{
+    font-size: 4rem;
+    font-weight: 900;;
+    color: white;
+}
+
