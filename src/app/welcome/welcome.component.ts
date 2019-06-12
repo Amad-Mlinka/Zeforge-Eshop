@@ -13,7 +13,7 @@ tiles:Tile[];
   constructor(private storeInfo:StoreInfoService) { }
 
   ngOnInit() {
-    console.log(this.storeInfo);
+    
     this.tiles=this.storeInfo.tiles;
   }
 

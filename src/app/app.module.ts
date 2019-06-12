@@ -18,7 +18,11 @@ import {
         MatListModule 
       }from '@angular/material';
 import { CartComponent } from './cart/cart.component'
-import { ProductService } from './services/product.service';
+import { ProductService } from './services/mob/product.service';
+import { KompService } from './services/komp/komp.service';
+import { VideoService } from './services/video/video.service';
+import { FotoService } from './services/foto/foto.service';
+import { OstaloService } from './services/ostalo/ostalo.service';
 import { RouteRoutingModule } from './route/route-routing.module';
 import { FAQComponent } from './faq/faq.component';
 import { BlogComponent } from './blog/blog.component';
@@ -62,7 +66,7 @@ import { OstaloComponent } from './ostalo/ostalo.component';
     RouteRoutingModule
 
   ],
-  providers: [StoreInfoService,ProductService],
+  providers: [StoreInfoService,ProductService,KompService,VideoService,FotoService,OstaloService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

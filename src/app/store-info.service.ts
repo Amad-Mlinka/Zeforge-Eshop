@@ -8,6 +8,7 @@ export class StoreInfoService {
   tiles : Tile[]=[
     {
       text:'Racunari',
+      value:"komp",
       cols:2,
       rows:2,
       class:'one-tile',
@@ -15,6 +16,7 @@ export class StoreInfoService {
     },
     {
       text:'Mobiteli',
+      value:"/mob",
       cols:1,
       rows:1,
       class:'two-tile',
@@ -22,6 +24,7 @@ export class StoreInfoService {
     },
     {
       text:'Foto-Oprema',
+      value:"/foto",
       cols:1,
       rows:2,
       class:'three-tile',
@@ -29,6 +32,7 @@ export class StoreInfoService {
     },
     {
       text:'Gaming Oprema',
+      value:"/game",
       cols:1,
       rows:2,
       class:'four-tile',
@@ -36,6 +40,7 @@ export class StoreInfoService {
     },
     {
       text:'Video Oprema',
+      value:"/video",
       cols:2,
       rows:1,
       class:'five-tile',
@@ -43,6 +48,7 @@ export class StoreInfoService {
     },
     {
       text:'Ostalo',
+      value:"/ostalo",
       cols:1,
       rows:1,
       class:'six-tile',

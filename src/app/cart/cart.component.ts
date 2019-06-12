@@ -1,7 +1,12 @@
 import { Component, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Item } from '../entities/item.entity';
-import { ProductService } from '../services/product.service';
+import { Item } from '../entities/Mob/item.entity';
+import { ProductService } from '../services/mob/product.service';
+import { KompService } from '../services/komp/komp.service'
+import { FotoService } from '../services/foto/foto.service'
+import { VideoService } from '../services/video/video.service'
+import { OstaloService } from '../services/ostalo/ostalo.service'
+
 
 @Component({
 	templateUrl: 'cart.component.html'
@@ -87,7 +92,9 @@ export class CartComponent implements OnInit {
 			}
 		}
 		localStorage.setItem("cart", JSON.stringify(cart));
+		this.numb=0;
 		this.loadCart();
+		
 	}
 	removeAll(): void {
 		let cart: any = JSON.parse(localStorage.getItem('cart'));
@@ -97,7 +104,9 @@ export class CartComponent implements OnInit {
 				break;
 		}
 		localStorage.setItem("cart", JSON.stringify(cart));
+		this.numb=0;
 		this.loadCart();
+		
 
 
 	}

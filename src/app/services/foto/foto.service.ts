@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 
-import { Product } from '../entities/product.entity';
+import { Product } from '../../entities/Foto/product.entity';
 
 @Injectable()
-export class ProductService {
+export class FotoService {
 
     private products: Product[];
 

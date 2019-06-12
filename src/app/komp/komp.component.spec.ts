@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KompComponent } from './komp.component';
+import { KompComponent } from '../Komp/komp.component';
 
 describe('KompComponent', () => {
   let component: KompComponent;

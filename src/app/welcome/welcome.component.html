@@ -1,9 +1,9 @@
-
+<div class="box">
 <mat-grid-list cols="4" rowHeight="200px" gutterSize="15">
-<mat-grid-tile [routerLink]="['product',tile.id]" *ngFor="let tile of tiles; " 
+<mat-grid-tile [routerLink]="[tile.value]" *ngFor="let tile of tiles; " 
 [colspan]="tile.cols" [rowspan]="tile.rows" [ngClass]="tile.class">
-<div  class="box-text">{{tile.text}}</div>
+<div  class="box-text" style="text-align: center">{{tile.text}}</div>
 <!---->
 </mat-grid-tile>
 </mat-grid-list>
- 
+</div>

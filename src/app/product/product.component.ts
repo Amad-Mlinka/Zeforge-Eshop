@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { StoreInfoService } from '../store-info.service';
-import { Product } from '../entities/product.entity';
-import { ProductService } from '../services/product.service';
+import { Product } from '../entities/Mob/product.entity';
+import { ProductService } from '../services/mob/product.service';
 
 @Component({
 	selector:'table-striped',
