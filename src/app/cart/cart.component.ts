@@ -75,7 +75,7 @@ export class CartComponent implements OnInit {
 
 	remove(id: number): void {
 		let cart: any = JSON.parse(localStorage.getItem('cart'));
-		let index: number = -1;
+		
 		for (var i = 0; i < cart.length; i++) {
 			let item: Item = JSON.parse(cart[i]);
 			if (item.product.id == id) {
@@ -85,6 +85,18 @@ export class CartComponent implements OnInit {
 		}
 		localStorage.setItem("cart", JSON.stringify(cart));
 		this.loadCart();
+	}
+	removeAll(): void {
+		let cart: any = JSON.parse(localStorage.getItem('cart'));
+		for (var i = 0; i <= cart.length; i++) {
+			let item: Item = JSON.parse(cart[i]);
+				cart.splice(0, cart.length);
+				break;
+		}
+		localStorage.setItem("cart", JSON.stringify(cart));
+		this.loadCart();
+
+
 	}
 
 

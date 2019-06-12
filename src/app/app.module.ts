@@ -22,6 +22,7 @@ import { ProductService } from './services/product.service';
 import { RouteRoutingModule } from './route/route-routing.module';
 import { FAQComponent } from './faq/faq.component';
 import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { BlogComponent } from './blog/blog.component';
     ProductComponent,
     CartComponent,
     FAQComponent,
-    BlogComponent
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
