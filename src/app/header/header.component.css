@@ -1,11 +1,24 @@
-.menu-header{
+/*.menu-header{
     display: flex;
     justify-content: space-evenly;
     background-color: rgba(232, 235, 238, 0.5);
     margin-bottom: 40px;
     width: 100%;
-}
+}*/
 
+
+.menu-header{
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(232, 235, 238, 0.5);
+    margin-bottom: 40px;
+    width: 100%;
+}
 
 
 

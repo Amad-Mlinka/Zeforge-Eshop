@@ -7,6 +7,7 @@ import { ProductService } from '../services/product.service';
 @Component({
 	selector:'table-striped',
 	templateUrl: 'product.component.html',
+	styleUrls: ['./product.component.css']
 	
 })
 

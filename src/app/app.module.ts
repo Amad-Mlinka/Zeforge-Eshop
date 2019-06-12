@@ -23,6 +23,12 @@ import { RouteRoutingModule } from './route/route-routing.module';
 import { FAQComponent } from './faq/faq.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { AllproductsComponent } from './allproducts/allproducts.component';
+import { KompComponent } from './komp/komp.component';
+import { VideoComponent } from './video/video.component';
+import { FotoComponent } from './foto/foto.component';
+import { GameComponent } from './game/game.component';
+import { OstaloComponent } from './ostalo/ostalo.component';
 
 
 @NgModule({
@@ -35,7 +41,13 @@ import { ContactComponent } from './contact/contact.component';
     CartComponent,
     FAQComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    AllproductsComponent,
+    KompComponent,
+    VideoComponent,
+    FotoComponent,
+    GameComponent,
+    OstaloComponent
   ],
   imports: [
     BrowserModule,
