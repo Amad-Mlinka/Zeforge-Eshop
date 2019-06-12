@@ -13,7 +13,7 @@
   }
   
   input[type=submit] {
-    background-color: #4CAF50;
+    background:linear-gradient( 135deg, #052bff69 10%, #8d8d8d6b 100%);;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -21,7 +21,7 @@
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background:linear-gradient( 260deg, #052bff69 10%, #8d8d8d6b 100%);;
   }
   
 
