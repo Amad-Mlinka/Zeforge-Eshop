@@ -1,9 +1,11 @@
+
+
 @import '@angular/material/prebuilt-themes/purple-green.css';
 :root {
     --off-white:#fffff2;
 }
 body{
-    background-color: var(--off-white)
+    background-color: var(--off-white);
 }
 
 .basic-container {
@@ -14,13 +16,17 @@ body{
 
 }
 .mat-button{
-    background-color: rgba(232, 235, 238, 0.5);
+    background-color: rgba(232, 235, 238, 0.0);
     border-radius: 25px;
     margin: 10px;
+    width: 100%;
 }
 .mat-button:hover{
     background-color: rgba(0, 0, 0, 0.1);
 }
 .mat-app-background{
-    background-color: var(--off-white)
+    background-color: var(--off-white);
+}
+a:hover{
+    cursor: pointer;
 }

@@ -1,5 +1,11 @@
 .menu-header{
     display: flex;
-    justify-content:center;
+    justify-content: space-evenly;
+    background-color: rgba(232, 235, 238, 0.5);
     margin-bottom: 40px;
+    width: 100%;
 }
+
+
+
+

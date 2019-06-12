@@ -1,9 +1,11 @@
 
-<table  style="margin: 0 auto; background-color: #f2f2f2;">
-        <h3>Cart Info</h3>
-    <tr>
+<table border="0" style="margin: 0 auto; background-color: #f2f2f2; ">
+        <h3 >Cart Info( {{numb}} )</h3>
+    <tr style="padding: 1em;
+    background: #ddd;
+    border-bottom: 2px solid white;">
         
-        <th>Id</th>
+        <th align="center">Id</th>
         <th>Naziv</th>
         <th>Slika</th>
         <th>Cijena</th>
@@ -12,26 +14,28 @@
         <th colspan="2">Obrisat</th>
         <th></th>
     </tr>
-    <tr *ngFor="let item of items">
+    <tr *ngFor="let item of items" style="padding: 1em;
+    background: #ddd;
+    border-bottom: 2px solid white;">
         
-        <td>{{item.product.id}}</td>
-        <td>{{item.product.name}}</td>
+        <td align="center">{{item.product.id}}</td>
+        <td align="center">{{item.product.name}}</td>
         <td>
-            <img src="{{item.product.image}}" width="50">
+            <img src="{{item.product.image}}" width="50" height="67">
         </td>
-        <td>{{item.product.price}}</td>
-        <td>{{item.quantity}}</td>
-        <td>{{item.product.price * item.quantity}}</td>
+        <td align="center">{{item.product.price}}</td>
+        <td align="center">{{item.quantity}}</td>
+        <td align="center">{{item.product.price * item.quantity}}</td>
         <td align="center">
-                <button mat-button (click)="remove(item.product.id)">X</button>
+               <a><img src="https://image.flaticon.com/icons/svg/65/65307.svg" alt="" width="35px"  (click)="remove(item.product.id)"></a>
             </td>
         
     </tr>
     <tr>
         <td colspan="5" align="left">Total</td>
-        <td>{{total}}</td>
+        <td align="center">{{total}}</td>
         <td align="center">
-                <button mat-button (click)="removeAll()">XALL</button>
+                <a><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-coloricon-1/21/52-512.png" alt="" width="35px" (click)="removeAll()"></a>
     </td>
     </tr>
 </table>

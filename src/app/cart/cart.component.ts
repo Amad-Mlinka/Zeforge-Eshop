@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Item } from '../entities/item.entity';
 import { ProductService } from '../services/product.service';
@@ -11,12 +11,14 @@ export class CartComponent implements OnInit {
 
 	private items: Item[] = [];
 	private total: number = 0;
-	
+	private numb: number=0;
 
+	
 	constructor(
 		private activatedRoute: ActivatedRoute,
 		private productService: ProductService
 	) { }
+	
 
 	ngOnInit() {
 		this.activatedRoute.params.subscribe(params => {
@@ -69,6 +71,7 @@ export class CartComponent implements OnInit {
 				quantity: item.quantity
 			});
 			this.total += item.product.price * item.quantity;
+			this.numb++;
 		
 		}
 	}
@@ -98,7 +101,7 @@ export class CartComponent implements OnInit {
 
 
 	}
-
+	
 
 }
 
