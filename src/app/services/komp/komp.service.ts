@@ -12,12 +12,13 @@ export class KompService {
             {
                 "id": 8,
                 "name":"I7 4770HQ GTX 1060 4 GB",
+                "price": 490,
                 "ram": "4 GB",
                 "manufacturer": "Asus",
                 "cpu": "I7 4770HQ",
                 "gpu": "GTX 1060",
                 "image": "http:\/\/cdn2.gsmarena.com\/vv\/pics\/sony\/sony-xperia-z2-2.jpg",
-                "price": 490
+                
               }, {
                 "id": 9,
                 "name":"I5 2400 GTX 1080 8 GB",

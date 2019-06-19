@@ -1,0 +1,37 @@
+<div class="main">
+      <div style="position: relative; ">
+              <div *ngFor="let komp of kompi" >      
+                  <div style="
+                  position: relative;
+                  left: 15%;
+                  transform: translatex(-50%);
+                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                      max-width: 300px;
+                      float: left;
+                      width: 100%;
+                      text-align: center;
+                      margin-right: 30px;
+                      margin-bottom: 30px;
+                      font-family: arial;
+                      border: 1 black;
+                      border-radius: 10px;" >
+                          <img src="https://source.unsplash.com/random/300x40{{komp.id}}" alt="Racunar {{komp.id-7}}" style="width:300px; height:400px">
+                          <h1>{{komp.cpu}} {{komp.gpu}} {{komp.ram}}</h1>
+                          <p class="price" style="color: grey;font-size: 22px;">${{komp.price}}</p>
+                              <p>Opis Racunara</p>
+                              <p><button [routerLink]="['/cart', { id:komp.id }]" style="border: none;
+                                  outline: 0;
+                                  padding: 12px;
+                                  color: white;
+                                  background-color: #000;
+                                  text-align: center;
+                                  cursor: pointer;
+                                  width: 80%;
+                                  border-radius: 10px;
+                                  font-size: 18px;">Add to Cart</button></p>
+                           </div>
+                  </div>
+              </div>  
+</div>
+
+

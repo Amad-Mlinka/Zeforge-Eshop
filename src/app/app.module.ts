@@ -7,7 +7,6 @@ import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { RouteModule } from './route/route.module';
 import { RouterModule } from '@angular/router';
-import { ProductComponent } from './product/product.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { StoreInfoService } from './store-info.service'
 import { 
@@ -27,12 +26,13 @@ import { RouteRoutingModule } from './route/route-routing.module';
 import { FAQComponent } from './faq/faq.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
-import { AllproductsComponent } from './allproducts/allproducts.component';
-import { KompComponent } from './komp/komp.component';
-import { VideoComponent } from './video/video.component';
-import { FotoComponent } from './foto/foto.component';
-import { GameComponent } from './game/game.component';
-import { OstaloComponent } from './ostalo/ostalo.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { KompComponent } from './components/komp/komp.component';
+import { ProductComponent } from './components/product/product.component'
+import { VideoComponent } from './components/video/video.component';
+import { FotoComponent } from './components/foto/foto.component';
+import { GameComponent } from './components/game/game.component';
+import { OstaloComponent } from './components/ostalo/ostalo.component';
 
 
 @NgModule({
@@ -46,7 +46,7 @@ import { OstaloComponent } from './ostalo/ostalo.component';
     FAQComponent,
     BlogComponent,
     ContactComponent,
-    AllproductsComponent,
+    SidebarComponent,
     KompComponent,
     VideoComponent,
     FotoComponent,
@@ -66,7 +66,7 @@ import { OstaloComponent } from './ostalo/ostalo.component';
     RouteRoutingModule
 
   ],
-  providers: [StoreInfoService,ProductService,KompService,VideoService,FotoService,OstaloService],
+  providers: [StoreInfoService, ProductService, KompService, VideoService, FotoService, OstaloService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,11 +1,8 @@
-import { Component, OnInit} from '@angular/core';
+ import { Component, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Item } from '../entities/Mob/item.entity';
 import { ProductService } from '../services/mob/product.service';
-import { KompService } from '../services/komp/komp.service'
-import { FotoService } from '../services/foto/foto.service'
-import { VideoService } from '../services/video/video.service'
-import { OstaloService } from '../services/ostalo/ostalo.service'
+
 
 
 @Component({
@@ -27,9 +24,9 @@ export class CartComponent implements OnInit {
 
 	ngOnInit() {
 		this.activatedRoute.params.subscribe(params => {
-			var id = params['id'];
+			let id = params['id'];
 			if (id) {
-				var item: Item = {
+				let item: Item = {
 					product: this.productService.find(id),
 					quantity: 1
 				};
@@ -40,7 +37,7 @@ export class CartComponent implements OnInit {
 				} else {
 					let cart: any = JSON.parse(localStorage.getItem('cart'));
 					let index: number = -1;
-					for (var i = 0; i < cart.length; i++) {
+					for (let i = 0; i < cart.length; i++) {
 						let item: Item = JSON.parse(cart[i]);
 						if (item.product.id == id) {
 							index = i;
@@ -69,7 +66,7 @@ export class CartComponent implements OnInit {
 		this.items = [];
 		
 		let cart = JSON.parse(localStorage.getItem('cart'));
-		for (var i = 0; i < cart.length; i++) {
+		for (let i = 0; i < cart.length; i++) {
 			let item = JSON.parse(cart[i]);
 			this.items.push({
 				product: item.product,
@@ -84,7 +81,7 @@ export class CartComponent implements OnInit {
 	remove(id: number): void {
 		let cart: any = JSON.parse(localStorage.getItem('cart'));
 		
-		for (var i = 0; i < cart.length; i++) {
+		for (let i = 0; i < cart.length; i++) {
 			let item: Item = JSON.parse(cart[i]);
 			if (item.product.id == id) {
 				cart.splice(i, 1);
@@ -98,7 +95,7 @@ export class CartComponent implements OnInit {
 	}
 	removeAll(): void {
 		let cart: any = JSON.parse(localStorage.getItem('cart'));
-		for (var i = 0; i <= cart.length; i++) {
+		for (let i = 0; i <= cart.length; i++) {
 			let item: Item = JSON.parse(cart[i]);
 				cart.splice(0, cart.length);
 				break;

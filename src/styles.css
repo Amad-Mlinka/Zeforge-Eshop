@@ -1,16 +1,20 @@
-
-
 @import '@angular/material/prebuilt-themes/purple-green.css';
 :root {
     --off-white:#fffff2;
 }
 body{
     background-color: var(--off-white);
+    
+        background-color: #f2f2f2;
+    
 }
 
 .basic-container {
     padding: 0px;
     margin: 0px;
+}
+.box{
+margin-left: 160px;
 }
 .mat-figure:hover{
     background: rgba(0, 0, 0, 0.1);
@@ -31,4 +35,5 @@ body{
 a:hover{
     cursor: pointer;
 }
+
 
